@@ -20,7 +20,9 @@ def finder(files, queries):
 
         --> change newV from list type to hashable type (no list, etc)
         '''
-        newV =
+        # make newV hashable object
+        ''' returns empty array'''
+        newV = newV[k]
         # if that file not in cache, put value of that file to clean value as key
         if newV not in cache:
             cache[newV] = [v]
